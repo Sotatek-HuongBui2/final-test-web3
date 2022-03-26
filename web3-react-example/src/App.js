@@ -33,10 +33,7 @@ function App() {
   const connectWalletConnectConnector = () => {
     activate(walletConnectConnector, undefined, true).catch(e => console.log('ee', e));
   };
-
-  useEffect(()=>{
-    connectInjectedConnector()
-  },[])
+  
   return (
     <div className="App">
       <div style={{ marginTop: "4rem" }}>

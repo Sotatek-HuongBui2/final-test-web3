@@ -45,7 +45,6 @@ function TableHistory(props) {
         time: moment((new Date(data.time * 1000)).toUTCString()).format('HH:mm DD/MM/YYYY')
       })).reverse()
       setData(data.reverse())
-      // setData()
     }
   }
   useEffect(() => {
